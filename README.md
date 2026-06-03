@@ -4,7 +4,7 @@
 
 ## Descripción
 
-Proyecto académico desarrollado utilizando MongoDB para administrar una tienda de ropa.
+Proyecto académico se desarrollo utilizando MongoDB para administrar una tienda de ropa.
 
 La base de datos permitirá gestionar información sobre:
 
