@@ -95,7 +95,7 @@ Registra las transacciones realizadas por los clientes.
 ```json
 {
   "fecha": "2026-06-01",
-  "prenda": "Camiseta Deportiva",
+  "prenda": "Camisa Deportiva",
   "cantidad": 3,
   "total": 45000
 }
