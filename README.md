@@ -41,7 +41,6 @@ Además, se implementan operaciones CRUD (Crear, Leer, Actualizar y Eliminar) y 
 /database
 │
 ├── tienda.js
-
 README.md
 ```
 
@@ -53,33 +52,39 @@ README.md
 
 Almacena la información de los clientes de la tienda.
 #### Ejemplo
+```json
 {
   "nombre": "Yadir Rivera",
   "correo": "yadir9090@gmail.com",
   "telefono": "89878789"
 }
+```
 
 ### Marcas
 
 Almacena las marcas de ropa disponibles.
 
 #### Ejemplo
+```json
 {
 "nombre": "Nike",
 "país": "Costa Rica"
 }
+```
 
 ### Prendas
 
 Almacena los productos disponibles para la venta.
 
 #### Ejemplo
+```json
 {
   "nombre": "Camisa Deportiva",
   "marca": "Nike",
   "precio": 15000,
   "cantidad": 70
 }
+```
 
 
 ### Ventas
@@ -87,12 +92,14 @@ Almacena los productos disponibles para la venta.
 Registra las transacciones realizadas por los clientes.
 
 #### Ejemplo
+```json
 {
   "fecha": "2026-06-01",
   "prenda": "Camiseta Deportiva",
   "cantidad": 3,
   "total": 45000
 }
+```
 
 
 ---
