@@ -68,7 +68,7 @@ Almacena las marcas de ropa disponibles.
 ```json
 {
 "nombre": "Nike",
-"país": "Costa Rica"
+"pais": "Costa Rica"
 }
 ```
 
