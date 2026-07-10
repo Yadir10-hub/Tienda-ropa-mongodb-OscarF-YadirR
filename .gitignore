@@ -1,0 +1,18 @@
+﻿# Entorno virtual de Python
+API/.venv/
+
+# Variables privadas
+API/.env
+
+# Archivos generados por Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Visual Studio Code
+.vscode/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
