@@ -1,12 +1,13 @@
 from flask import Blueprint, jsonify, request
 from app.models.prenda import PrendaModel
-
+from app.security.auth import validar_token
 
 prendas = Blueprint("prendas", __name__)
 
 
 # Obtener todas
 @prendas.route("/prendas", methods=["GET"])
+@validar_token
 def obtener_prendas():
 
     return jsonify(
