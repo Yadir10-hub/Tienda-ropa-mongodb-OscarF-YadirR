@@ -1,0 +1,320 @@
+/* ======================================================
+   ESTILOS GENERALES
+   ====================================================== */
+
+body {
+
+    background-color: #f8f9fa;
+
+    color: #212529;
+
+}
+
+
+section {
+
+    scroll-margin-top: 90px;
+
+}
+
+
+.card {
+
+    border: none;
+
+}
+
+
+.table {
+
+    background-color: #ffffff;
+
+}
+
+
+.table th {
+
+    white-space: nowrap;
+
+    vertical-align: middle;
+
+}
+
+
+.table td {
+
+    vertical-align: middle;
+
+}
+
+
+footer {
+
+    margin-top: 50px;
+
+}
+
+
+
+/* ======================================================
+   ENCABEZADOS DE SECCIÓN
+   ====================================================== */
+
+.section-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+
+}
+
+
+.section-heading h2 {
+
+    color: #212529;
+
+}
+
+
+
+/* ======================================================
+   TARJETAS PRINCIPALES
+   ====================================================== */
+
+.dashboard-card {
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.dashboard-card:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+.dashboard-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    margin: 0 auto 1rem;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 1.5rem;
+
+}
+
+
+
+/* ======================================================
+   TABLAS
+   ====================================================== */
+
+.table-responsive {
+
+    border-radius: 0.5rem;
+
+}
+
+
+.table .id-cell {
+
+    max-width: 180px;
+
+    font-size: 0.78rem;
+
+    word-break: break-all;
+
+}
+
+
+.table tbody tr {
+
+    transition:
+        background-color 0.15s ease;
+
+}
+
+
+
+/* ======================================================
+   REPORTES
+   ====================================================== */
+
+.report-summary {
+
+    min-height: 90px;
+
+    padding: 1rem;
+
+    border: 1px solid #dee2e6;
+
+    border-radius: 0.75rem;
+
+    background-color: #f8f9fa;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+
+.report-summary-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: #e7f1ff;
+
+    color: #0d6efd;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 1.25rem;
+
+}
+
+
+
+/* ======================================================
+   NAVBAR
+   ====================================================== */
+
+.navbar .nav-link {
+
+    transition:
+        opacity 0.2s ease;
+
+}
+
+
+.navbar .nav-link:hover {
+
+    opacity: 0.8;
+
+}
+
+
+
+/* ======================================================
+   MODAL
+   ====================================================== */
+
+.modal-content {
+
+    border: none;
+
+    border-radius: 0.75rem;
+
+}
+
+
+.modal-header {
+
+    background-color: #f8f9fa;
+
+}
+
+
+
+/* ======================================================
+   BOTONES
+   ====================================================== */
+
+.btn {
+
+    border-radius: 0.5rem;
+
+}
+
+
+.btn i {
+
+    margin-right: 3px;
+
+}
+
+
+
+/* ======================================================
+   RESPONSIVE
+   ====================================================== */
+
+@media (max-width: 767.98px) {
+
+
+    .section-heading {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+
+    .section-heading .btn {
+
+        width: 100%;
+
+    }
+
+
+    .dashboard-card {
+
+        margin-bottom: 0.5rem;
+
+    }
+
+
+    .table {
+
+        font-size: 0.9rem;
+
+    }
+
+
+    .table .id-cell {
+
+        max-width: 120px;
+
+    }
+
+
+    .report-summary {
+
+        min-height: auto;
+
+    }
+
+}

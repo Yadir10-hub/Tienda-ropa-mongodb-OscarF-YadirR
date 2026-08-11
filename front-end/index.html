@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Sistema de administración de una tienda de ropa">
+
+    <title>Tienda de Ropa | Administración</title>
+
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+
+
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top shadow-sm">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            <i class="bi bi-shop"></i>
+            Tienda de Ropa
+        </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+        >
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div
+            class="collapse navbar-collapse"
+            id="menuPrincipal"
+        >
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link active"
+                        href="#"
+                    >
+                        Inicio
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="#prendas"
+                    >
+                        Prendas
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="#marcas"
+                    >
+                        Marcas
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="#ventas"
+                    >
+                        Ventas
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="#reportes"
+                    >
+                        Reportes
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="#usuarios"
+                    >
+                        Usuarios
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================================================
+
+
+<main class="container py-5">
+
+
+   
+    <section class="text-center mb-5">
+
+        <span class="badge text-bg-primary mb-3">
+            Panel de administración
+        </span>
+
+
+        <h1 class="fw-bold">
+            Sistema de Tienda de Ropa
+        </h1>
+
+
+        <p class="text-muted mb-0">
+
+            Administración de prendas, marcas,
+            ventas, inventario, reportes y usuarios
+
+        </p>
+
+    </section>
+
+
+
+  
+
+    <section class="row g-4 mb-5">
+
+
+        <!-- PRENDAS -->
+
+        <div class="col-md-4">
+
+            <div class="card h-100 shadow-sm dashboard-card">
+
+                <div class="card-body text-center">
+
+                    <div
+                        class="dashboard-icon bg-primary-subtle text-primary"
+                    >
+
+                        <i class="bi bi-bag"></i>
+
+                    </div>
+
+
+                    <h5 class="card-title">
+                        Prendas
+                    </h5>
+
+
+                    <p class="card-text text-muted">
+
+                        Administra las prendas disponibles
+                        en la tienda.
+
+                    </p>
+
+
+                    <a
+                        href="#prendas"
+                        class="btn btn-primary"
+                    >
+
+                        Ver prendas
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- VENTAS -->
+
+        <div class="col-md-4">
+
+            <div class="card h-100 shadow-sm dashboard-card">
+
+                <div class="card-body text-center">
+
+                    <div
+                        class="dashboard-icon bg-success-subtle text-success"
+                    >
+
+                        <i class="bi bi-graph-up-arrow"></i>
+
+                    </div>
+
+
+                    <h5 class="card-title">
+                        Ventas
+                    </h5>
+
+
+                    <p class="card-text text-muted">
+
+                        Consulta las ventas registradas
+                        y sus detalles.
+
+                    </p>
+
+
+                    <a
+                        href="#ventas"
+                        class="btn btn-success"
+                    >
+
+                        Ver ventas
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- REPORTES -->
+
+        <div class="col-md-4">
+
+            <div class="card h-100 shadow-sm dashboard-card">
+
+                <div class="card-body text-center">
+
+                    <div
+                        class="dashboard-icon bg-warning-subtle text-warning-emphasis"
+                    >
+
+                        <i class="bi bi-bar-chart"></i>
+
+                    </div>
+
+
+                    <h5 class="card-title">
+                        Reportes
+                    </h5>
+
+
+                    <p class="card-text text-muted">
+
+                        Consulta estadísticas de ventas
+                        e inventario.
+
+                    </p>
+
+
+                    <a
+                        href="#reportes"
+                        class="btn btn-warning"
+                    >
+
+                        Ver reportes
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PRENDAS
+         ===================================================== -->
+
+    <section
+        id="prendas"
+        class="mb-5"
+    >
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <h2 class="fw-bold mb-1">
+
+                    <i class="bi bi-bag-check"></i>
+
+                    Prendas
+
+                </h2>
+
+
+                <p class="text-muted mb-0">
+
+                    Administración de las prendas
+                    de la tienda
+
+                </p>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPrenda"
+                id="btnNuevaPrenda"
+            >
+
+                <i class="bi bi-plus-lg"></i>
+
+                Agregar prenda
+
+            </button>
+
+        </div>
+
+
+
+        <div class="card shadow-sm">
+
+            <div class="card-body">
+
+                <div class="table-responsive">
+
+                    <table
+                        class="table table-striped table-hover align-middle mb-0"
+                    >
+
+                        <thead class="table-dark">
+
+                            <tr>
+
+                                <th>
+                                    ID
+                                </th>
+
+                                <th>
+                                    Nombre
+                                </th>
+
+                                <th>
+                                    Marca
+                                </th>
+
+                                <th>
+                                    Precio
+                                </th>
+
+                                <th>
+                                    Cantidad
+                                </th>
+
+                                <th class="text-center">
+                                    Acciones
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="tablaPrendas">
+
+                            <tr>
+
+                                <td
+                                    colspan="6"
+                                    class="text-center text-muted py-4"
+                                >
+
+                                    <span
+                                        class="spinner-border spinner-border-sm me-2"
+                                    ></span>
+
+                                    Cargando prendas...
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MODAL AGREGAR / EDITAR PRENDA
+         ===================================================== -->
+
+    <div
+        class="modal fade"
+        id="modalPrenda"
+        tabindex="-1"
+        aria-labelledby="tituloModalPrenda"
+        aria-hidden="true"
+    >
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+
+                <div class="modal-header">
+
+                    <h5
+                        class="modal-title"
+                        id="tituloModalPrenda"
+                    >
+
+                        Agregar prenda
+
+                    </h5>
+
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar"
+                    ></button>
+
+                </div>
+
+
+
+                <form id="formPrenda">
+
+                    <div class="modal-body">
+
+
+                        <div class="mb-3">
+
+                            <label
+                                for="nombrePrenda"
+                                class="form-label"
+                            >
+
+                                Nombre
+
+                            </label>
+
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="nombrePrenda"
+                                maxlength="100"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <div class="mb-3">
+
+                            <label
+                                for="marcaPrenda"
+                                class="form-label"
+                            >
+
+                                Marca
+
+                            </label>
+
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="marcaPrenda"
+                                maxlength="100"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <div class="mb-3">
+
+                            <label
+                                for="precioPrenda"
+                                class="form-label"
+                            >
+
+                                Precio
+
+                            </label>
+
+
+                            <div class="input-group">
+
+                                <span class="input-group-text">
+                                    ₡
+                                </span>
+
+
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="precioPrenda"
+                                    min="0"
+                                    step="1"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="mb-3">
+
+                            <label
+                                for="cantidadPrenda"
+                                class="form-label"
+                            >
+
+                                Cantidad
+
+                            </label>
+
+
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="cantidadPrenda"
+                                min="0"
+                                step="1"
+                                required
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="modal-footer">
+
+
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+
+                            Cancelar
+
+                        </button>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-success"
+                            id="btnGuardarPrenda"
+                        >
+
+                            <i class="bi bi-check-lg"></i>
+
+                            Guardar prenda
+
+                        </button>
+
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MARCAS CON VENTAS
+         ===================================================== -->
+
+    <section
+        id="marcas"
+        class="mb-5"
+    >
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <h2 class="fw-bold mb-1">
+
+                    <i class="bi bi-tags"></i>
+
+                    Marcas con ventas
+
+                </h2>
+
+
+                <p class="text-muted mb-0">
+
+                    Marcas que registran prendas vendidas
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="card shadow-sm">
+
+            <div class="card-body">
+
+                <div class="table-responsive">
+
+                    <table
+                        class="table table-striped table-hover align-middle mb-0"
+                    >
+
+                        <thead class="table-dark">
+
+                            <tr>
+
+                                <th>
+                                    Marca
+                                </th>
+
+                                <th>
+                                    Cantidad de prendas vendidas
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="tablaMarcasVentas">
+
+                            <tr>
+
+                                <td
+                                    colspan="2"
+                                    class="text-center text-muted py-4"
+                                >
+
+                                    Cargando datos...
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         VENTAS
+         ===================================================== -->
+
+    <section
+        id="ventas"
+        class="mb-5"
+    >
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <h2 class="fw-bold mb-1">
+
+                    <i class="bi bi-receipt"></i>
+
+                    Ventas
+
+                </h2>
+
+
+                <p class="text-muted mb-0">
+
+                    Registro de las ventas realizadas
+                    en la tienda
+
+                </p>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="btnActualizarVentas"
+            >
+
+                <i class="bi bi-arrow-clockwise"></i>
+
+                Actualizar
+
+            </button>
+
+        </div>
+
+
+
+        <div class="card shadow-sm">
+
+            <div class="card-body">
+
+                <div class="table-responsive">
+
+                    <table
+                        class="table table-striped table-hover align-middle mb-0"
+                    >
+
+                        <thead class="table-dark">
+
+                            <tr>
+
+                                <th>
+                                    ID
+                                </th>
+
+                                <th>
+                                    Cliente
+                                </th>
+
+                                <th>
+                                    Prenda
+                                </th>
+
+                                <th>
+                                    Cantidad
+                                </th>
+
+                                <th>
+                                    Total
+                                </th>
+
+                                <th>
+                                    Fecha
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="tablaVentas">
+
+                            <tr>
+
+                                <td
+                                    colspan="6"
+                                    class="text-center text-muted py-4"
+                                >
+
+                                    Cargando ventas...
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         REPORTES
+         ===================================================== -->
+
+    <section
+        id="reportes"
+        class="mb-5"
+    >
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <h2 class="fw-bold mb-1">
+
+                    <i class="bi bi-bar-chart-line"></i>
+
+                    Reportes
+
+                </h2>
+
+
+                <p class="text-muted mb-0">
+
+                    Información resumida para analizar
+                    las ventas y el inventario
+
+                </p>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="btnActualizarReportes"
+            >
+
+                <i class="bi bi-arrow-clockwise"></i>
+
+                Actualizar reportes
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ================================================
+             VENTAS POR FECHA
+             ================================================ -->
+
+        <div class="card shadow-sm mb-4">
+
+            <div class="card-body">
+
+                <h5 class="card-title mb-3">
+
+                    <i class="bi bi-calendar3"></i>
+
+                    Ventas por fecha
+
+                </h5>
+
+
+                <div class="row g-3 align-items-end">
+
+                    <div class="col-md-6">
+
+                        <label
+                            for="fechaReporte"
+                            class="form-label"
+                        >
+
+                            Seleccione una fecha
+
+                        </label>
+
+
+                        <input
+                            type="date"
+                            class="form-control"
+                            id="fechaReporte"
+                        >
+
+                    </div>
+
+
+                    <div class="col-md-3">
+
+                        <button
+                            type="button"
+                            class="btn btn-primary w-100"
+                            id="btnConsultarFecha"
+                        >
+
+                            <i class="bi bi-search"></i>
+
+                            Consultar
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="resultadoVentasFecha"
+                    class="mt-4"
+                >
+
+                    <div class="alert alert-light border mb-0">
+
+                        Seleccione una fecha para consultar
+                        las ventas.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================================================
+             INVENTARIO
+             ================================================ -->
+
+        <div class="card shadow-sm mb-4">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+
+                    <i class="bi bi-box-seam"></i>
+
+                    Prendas vendidas y stock restante
+
+                </h5>
+
+
+                <div class="table-responsive mt-3">
+
+                    <table
+                        class="table table-striped table-hover align-middle mb-0"
+                    >
+
+                        <thead class="table-secondary">
+
+                            <tr>
+
+                                <th>
+                                    Prenda
+                                </th>
+
+                                <th>
+                                    Vendidas
+                                </th>
+
+                                <th>
+                                    Stock restante
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="tablaInventario">
+
+                            <tr>
+
+                                <td
+                                    colspan="3"
+                                    class="text-center text-muted py-4"
+                                >
+
+                                    Cargando inventario...
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================================================
+             TOP 5 MARCAS
+             ================================================ -->
+
+        <div class="card shadow-sm mb-4">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+
+                    <i class="bi bi-trophy"></i>
+
+                    Top 5 marcas más vendidas
+
+                </h5>
+
+
+                <div class="table-responsive mt-3">
+
+                    <table
+                        class="table table-striped table-hover align-middle mb-0"
+                    >
+
+                        <thead class="table-secondary">
+
+                            <tr>
+
+                                <th>
+                                    Posición
+                                </th>
+
+                                <th>
+                                    Marca
+                                </th>
+
+                                <th>
+                                    Cantidad de prendas vendidas
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="tablaTopMarcas">
+
+                            <tr>
+
+                                <td
+                                    colspan="3"
+                                    class="text-center text-muted py-4"
+                                >
+
+                                    Cargando reporte...
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         USUARIOS
+         ===================================================== -->
+
+    <section
+        id="usuarios"
+        class="mb-5"
+    >
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <h2 class="fw-bold mb-1">
+
+                    <i class="bi bi-people"></i>
+
+                    Reporte de usuarios
+
+                </h2>
+
+
+                <p class="text-muted mb-0">
+
+                    Usuarios registrados en la tienda
+
+                </p>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="btnActualizarUsuarios"
+            >
+
+                <i class="bi bi-arrow-clockwise"></i>
+
+                Actualizar
+
+            </button>
+
+        </div>
+
+
+
+        <div class="card shadow-sm">
+
+            <div class="card-body">
+
+                <div class="table-responsive">
+
+                    <table
+                        class="table table-striped table-hover align-middle mb-0"
+                    >
+
+                        <thead class="table-dark">
+
+                            <tr>
+
+                                <th>
+                                    ID
+                                </th>
+
+                                <th>
+                                    Nombre
+                                </th>
+
+                                <th>
+                                    Correo
+                                </th>
+
+                                <th>
+                                    Teléfono
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="tablaUsuarios">
+
+                            <tr>
+
+                                <td
+                                    colspan="4"
+                                    class="text-center text-muted py-4"
+                                >
+
+                                    Cargando usuarios...
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="bg-dark text-white text-center py-4">
+
+    <div class="container">
+
+        <p class="mb-1 fw-semibold">
+
+            <i class="bi bi-shop"></i>
+
+            Tienda de Ropa
+
+        </p>
+
+
+        <small class="text-white-50">
+
+            Proyecto API - Administración y reportes
+
+        </small>
+
+    </div>
+
+</footer>
+
+
+
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+
+
+
+>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
